@@ -1,0 +1,22 @@
+<div class="col-lg-4">
+  <div class="catalogItem">
+    <div class="catalogItem__img">
+      <img src="{{product.src}}" alt="{{product.title}}">
+    </div>
+    <div class="catalogItem__name" [ngClass]="{odd:isOdd}">{{position+1}}. {{product.title}}</div>
+    <div class="catalogItem__code">Артикул: {{product.serial}}</div>
+    <div class="catalogItem__brand">Бренд: <strong>{{product.author}}</strong></div>
+    <div class="catalogItem__prices"
+      [courseTooltip]="dolarPrice(product.price) | currency:'RUB'"
+      #t="tooltip"
+    >
+      Цена:
+      <strong
+        (mouseenter)="t.show()"
+        (mouseleave)="t.hide()"
+      >{{product.price | currency:'$'}}</strong>
+      <!--<span class="tooltiptext open">Эквив. ~ 150$</span>-->
+    </div>
+    <button class="catalogItem__btn">Заказать</button>
+  </div>
+</div>
