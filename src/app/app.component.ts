@@ -10,13 +10,15 @@ import { IProduct } from './common/entity/ProductInterface';
 })
 export class AppComponent implements OnInit {
     public shopName = 'Gluts';
-    public logoImg = 'assets/img/logo.png';
-    public year = (new Date()).getFullYear();
-    public text = '';
+    public logoImg  = 'assets/img/logo.png';
+    public year     = (new Date()).getFullYear();
+    public text     = '';
+
+    public products$: Observable<IProduct[]>
 
     public constructor(
-        private _productsService: ProductsService,
-        public products$: Observable<IProduct[]>
+        private _productsService: ProductsService
+
     ) {
 
     }
