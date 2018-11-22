@@ -1,4 +1,4 @@
-import {Directive, ElementRef, HostBinding, Input, OnInit, Renderer2} from '@angular/core';
+import {Directive, ElementRef, HostBinding, HostListener, Input, OnInit, Renderer2} from '@angular/core';
 
 @Directive({
     selector: '[courseTooltip]',
@@ -25,10 +25,11 @@ export class TooltipDirective implements OnInit {
         private _elementRef: ElementRef
     ) { }
 
-    /*@HostListener('document:keyup.escape', ['@event'])
-    public tooltipHide(e: KeyboardEvent): void {
+    @HostListener('document:keyup.escape', ['$event'])
+    public tooltipHide(_e: KeyboardEvent): void {
+        console.log(_e);
         this.hide();
-    }*/
+    }
 
     public ngOnInit() {
         this._tooltipContext.className = 'tooltiptext';

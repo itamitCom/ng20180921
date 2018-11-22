@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'course-header',
@@ -13,7 +14,9 @@ export class HeaderComponent implements OnInit {
   @Output()
   public searchByText: EventEmitter<string> = new EventEmitter();
 
-  constructor() {
+  public constructor(
+      private _router: Router
+  ) {
       console.log(1, this.logo);
   }
 
@@ -24,5 +27,9 @@ export class HeaderComponent implements OnInit {
   public search(event: KeyboardEvent) {
       const input: HTMLInputElement = event.target as HTMLInputElement;
       this.searchByText.emit(input.value);
+  }
+
+  public goToProducts() {
+      this._router.navigate(['products']);
   }
 }

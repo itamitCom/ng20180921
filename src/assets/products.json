@@ -1,7 +1,7 @@
 {
-  "data": [
+  "products": [
     {
-      "_id": "58e1f80939d7162e9a0a9eb0",
+      "id": "1",
       "title": "Обои",
       "serial": 1045,
       "author": "Fromental",
@@ -9,7 +9,7 @@
       "src": "assets/img/img1.jpg"
     },
     {
-      "_id": "58e1f80996409af652ff5997",
+      "id": "2",
       "title": "Обои",
       "serial": 1045,
       "author": "Puma",
@@ -17,7 +17,7 @@
       "src": "assets/img/img1.jpg"
     },
     {
-      "_id": "58e1f809438ccc28b805ea3b",
+      "id": "3",
       "title": "Обои",
       "serial": 1045,
       "author": "Fromental",
@@ -25,7 +25,7 @@
       "src": "assets/img/img1.jpg"
     },
     {
-      "_id": "58e1f809fd6385dd5adc1baa",
+      "id": "4",
       "title": "Обои",
       "serial": 1045,
       "author": "Puma",
@@ -33,7 +33,7 @@
       "src": "assets/img/img1.jpg"
     },
     {
-      "_id": "58e1f809473528b3533131d0",
+      "id": "5",
       "title": "Обои",
       "serial": 1045,
       "author": "Addidas",
@@ -41,7 +41,7 @@
       "src": "assets/img/img1.jpg"
     },
     {
-      "_id": "58e1f80962fd2c3cb475978d",
+      "id": "6",
       "title": "Обои",
       "serial": 1045,
       "author": "Fromental",
@@ -49,7 +49,7 @@
       "src": "assets/img/img1.jpg"
     },
     {
-      "_id": "58e1f809711416f3d8c0a7ad",
+      "id": "7",
       "title": "Обои",
       "serial": 1045,
       "author": "Addidas",
@@ -57,7 +57,7 @@
       "src": "assets/img/img1.jpg"
     },
     {
-      "_id": "58e1f809a8fd877d977d9e22",
+      "id": "8",
       "title": "Обои",
       "serial": 1045,
       "author": "Fromental",
@@ -65,7 +65,7 @@
       "src": "assets/img/img1.jpg"
     },
     {
-      "_id": "58e1f8095d5bc87ca60def1c",
+      "id": "9",
       "title": "Обои",
       "serial": 1045,
       "author": "Puma",
@@ -73,7 +73,7 @@
       "src": "assets/img/img1.jpg"
     },
     {
-      "_id": "58e1f809c0b34dc771346a57",
+      "id": "10",
       "title": "Обои",
       "serial": 1045,
       "author": "Fromental",

@@ -1,7 +1,9 @@
 <div class="col-lg-4">
   <div class="catalogItem">
     <div class="catalogItem__img">
-      <img src="{{product.src}}" alt="{{product.title}}">
+      <img src="{{product.src}}" alt="{{product.title}}"
+        [routerLink]="['/products', product.id]"
+      >
     </div>
     <div class="catalogItem__name" [ngClass]="{odd:isOdd}">{{position+1}}. {{product.title}}</div>
     <div class="catalogItem__code">Артикул: {{product.serial}}</div>
@@ -17,6 +19,6 @@
       >{{product.price | currency:'$'}}</strong>
       <!--<span class="tooltiptext open">Эквив. ~ 150$</span>-->
     </div>
-    <button class="catalogItem__btn">Заказать</button>
+    <button class="catalogItem__btn" (click)="addToCart(product)">Заказать</button>
   </div>
 </div>
